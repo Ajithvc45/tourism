@@ -69,6 +69,7 @@ form {
 
 .explore {
     position: absolute;
+    line-height: 1;
     margin-left: 43%;
     margin-top: 28%;
     width: 160px;
