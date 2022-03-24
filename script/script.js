@@ -45,3 +45,14 @@ password.addEventListener("input", () => {
         strengthBadge.style.display = 'none';
     }
 });
+
+var check = function(){
+    if(document.getElementById("PassEntry").value ==
+    document.getElementById("rePassEntry").value){
+        document.getElementById("message").style.color = "green";
+        document.getElementById("message").innerHTML = "Matching";
+    }else{
+        document.getElementById("message").style.color = "red";
+        document.getElementById("message").innerHTML = "Not Matching";
+    }
+}
