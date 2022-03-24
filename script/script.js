@@ -27,11 +27,11 @@ function StrengthChecker(PasswordParameter) {
         strengthBadge.style.backgroundColor = "green";
         strengthBadge.textContent = 'Strong';
     } else if(mediumPassword.test(PasswordParameter)) {
-        strengthBadge.style.backgroundColor = 'blue';
+        strengthBadge.style.backgroundColor = 'orange';
         strengthBadge.textContent = 'Medium';
     } else {
         strengthBadge.style.backgroundColor = 'red';
-        strengthBadge.textContent = 'Weak';
+        strengthBadge.textContent = 'Poor';
     }
 }
 
