@@ -59,7 +59,7 @@ var check = function(){
 
 
 //phoneNum
-
+                        
 $(document).ready(function () {
 
     $(".phone_us").keyup(function (e) {
