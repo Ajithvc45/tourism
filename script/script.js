@@ -46,7 +46,7 @@ password.addEventListener("input", () => {
     }
 });
 
-var check = function(){
+var check = function(){ 
     if(document.getElementById("PassEntry").value ==
     document.getElementById("rePassEntry").value){
         document.getElementById("message").style.color = "green";
@@ -56,3 +56,25 @@ var check = function(){
         document.getElementById("message").innerHTML = "Not Matching";
     }
 }
+
+
+//phoneNum
+
+$(document).ready(function () {
+
+    $(".phone_us").keyup(function (e) {
+        var value = $(".phone_us").val();
+        if (e.key.match(/[0-9]/) == null) {
+            value = value.replace(e.key, "");
+            $(".phone_us").val(value);
+            return;
+        }
+    
+        if (value.length == 3) {
+            $(".phone_us").val(value + "-")
+        }
+        if (value.length == 7) {
+            $(".phone_us").val(value + "-")
+        }
+    });
+    });

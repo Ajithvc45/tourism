@@ -24,7 +24,7 @@
         </ul>
         </nav>
         <section>
-        <form action="ak.html" onsubmit="return validate()" style="border:solid 1px rgb(245, 115, 245) none; width: 500px; position: relative; margin-top: 5%; margin-left: 500px; margin-bottom: 20%;">
+        <form action="ak.html" id="form1" runat="server" onsubmit="return validate()" style="border:solid 1px rgb(245, 115, 245) none; width: 500px; position: relative; margin-top: 5%; margin-left: 500px; margin-bottom: 20%;">
             <div class="container">
               <!-- <div class="row"> -->
                 <!-- <div class="col-lg-4"> -->
@@ -39,7 +39,7 @@
 
               <label for="email"><b>Phone Number</b></label>
               <label for="error" id="numerror"></label><br>
-              <input type="number" placeholder="Enter Phone number" id="number" maxlength="10" style="width: 100%; height: 55px; border: none; background: #f1f1f1;"> <br><br>
+              <input type="text" placeholder="Enter Phone number" id="number" maxlength="12" class="phone_us" style="width: 100%; height: 55px; border: none; background: #f1f1f1;"> <br>
 
               <label for="psw"><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="psw" id="PassEntry" class="form-control passwordInput" onkeyup="check()"><br>
@@ -58,7 +58,7 @@
           
               <div class="clearfix">
                 <button type="button" class="cancelbtn">Cancel</button>
-                <button type="submit" class="signupbtn">Sign Up</button>
+                <button type="submit" class="signupbtn">Sign Up</button>    
               </div>
             <!-- </div>
             </div> -->
